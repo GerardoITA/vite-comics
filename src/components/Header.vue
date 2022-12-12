@@ -1,11 +1,5 @@
-<script setup>
-import { ref } from 'vue'
+<script>
 
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
 </script>
 
 <template>
@@ -13,5 +7,5 @@ const count = ref(0)
 </template>
 
 <style scoped>
-
+ 
 </style>
