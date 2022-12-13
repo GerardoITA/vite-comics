@@ -1,7 +1,12 @@
 <script>
     import json from "../assets/dc-comics.json"
+    import Slide from "../components/main/SlidesDC.vue"
+    
     export default {
         name: "MainDC",
+        components: {
+            Slide
+        },
         data(){
             return {
                 slides: json
@@ -13,7 +18,14 @@
 <template>
     <div class="outer">
         <div class="outerInner">
-            <h1>-->  </h1>
+            <Slide v-for="slide in slides"
+            :img="slide.thumb"
+            :prezzo="slide.price"
+            :serie="slide.series"
+            :tipo="slide.type">
+            </Slide> 
+
+            
         </div>
         
     </div>
@@ -27,7 +39,10 @@
         background-color: $DCgrey;
         min-height: calc(100vh - 50rem)
     }
-    h1 {
-        color: white;
+    .outerInner {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3rem;
+        flex-wrap: wrap;
     }
 </style>
