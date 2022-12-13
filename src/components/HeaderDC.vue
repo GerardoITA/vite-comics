@@ -73,9 +73,8 @@
 @use "../styles/partials/variables" as *;
 @use "../styles/partials/mixins" as *;
     .outer {
-        @include center(both);
         gap: 20%;
-        height: 10rem;
+        background-color: white;
     }
     nav {
         box-sizing: border-box;
