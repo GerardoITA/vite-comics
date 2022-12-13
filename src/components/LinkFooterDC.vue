@@ -28,7 +28,9 @@
             }
         },
         methods: {
-
+            getImageURL: function (imgPath){
+                return new URL(imgPath, import.meta.url).href
+            }
         }
     }
 </script>
@@ -43,7 +45,7 @@
                 </div>
                 <ul>
                     <li v-for="(link, index) in footerLinks" :key="index">
-                        <a :href="link.url"><img src="../assets/footer-facebook.png" alt=""></a>
+                        <a :href="link.url"><img :src="getImageURL(link.path)" alt=""></a>
                     </li>
                 </ul>
             </div>
