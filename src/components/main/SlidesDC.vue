@@ -12,7 +12,8 @@
 
 <template>
     <div class="slide">
-
+        <img :src="img">
+        <h3>{{serie}}</h3>
     </div>
 
 </template>
@@ -21,6 +22,11 @@
     h3 {
         margin-top: 1rem;
         color: white;
+    }
+    .slide {
+        width: 15rem;
+        height: auto;
+        cursor: pointer;
     }
 </style>
 

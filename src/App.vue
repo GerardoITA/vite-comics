@@ -4,6 +4,7 @@ import MainDC from './components/MainDC.vue'
 import BannerDC from './components/BannerDC.vue'
 import FooterDC from './components/FooterDC.vue'
 import LinkFooterDC from './components/LinkFooterDC.vue'
+import JumbotronDC from './components/JumbotronDC.vue'
 
 export default {
   name: "App",
@@ -13,12 +14,14 @@ export default {
     BannerDC,
     FooterDC,
     LinkFooterDC,
+    JumbotronDC,
   }
 }
 </script>
 
 <template>
  <HeaderDC></HeaderDC>
+ <JumbotronDC></JumbotronDC>
  <MainDC></MainDC>
  <BannerDC></BannerDC>
  <FooterDC></FooterDC>
