@@ -205,7 +205,9 @@
                     text-decoration: none;
                     color: rgb(180, 180, 180);
                     font-weight: 400; 
-
+                    &:hover {
+                        color: rgb(225, 225, 225);
+                    }
 
                 }
 

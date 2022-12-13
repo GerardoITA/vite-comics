@@ -1,9 +1,10 @@
 <script>
+    import json from "../assets/dc-comics.json"
     export default {
         name: "MainDC",
         data(){
             return {
-                
+                slides: json
             }
         }
     }
@@ -12,7 +13,7 @@
 <template>
     <div class="outer">
         <div class="outerInner">
-            <h1>--> Content goes here &lt-- </h1>
+            <h1>-->  </h1>
         </div>
         
     </div>

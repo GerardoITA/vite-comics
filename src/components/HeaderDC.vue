@@ -82,6 +82,7 @@
         box-sizing: border-box;
         ul {
                 display: flex;
+                
         
                 li {
                     list-style: none;
