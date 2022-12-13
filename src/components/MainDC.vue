@@ -11,7 +11,10 @@
 
 <template>
     <div class="outer">
-        <h1>--> Content goes here &lt-- </h1>
+        <div class="outerInner">
+            <h1>--> Content goes here &lt-- </h1>
+        </div>
+        
     </div>
 
 </template>

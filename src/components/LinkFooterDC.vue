@@ -32,17 +32,20 @@
 
 <template>
     <div class="outer">
-        <button>SIGN UP NOW!</button>
-        <div class="linkBar">
-            <div class="linkBarText">
-                FOLLOW US
+        <div class="outerInner">
+            <button>SIGN UP NOW!</button>
+            <div class="linkBar">
+                <div class="linkBarText">
+                    FOLLOW US
+                </div>
+                <ul>
+                    <li v-for="(link, index) in footerLinks" :key="index">
+                        <a :href="link.url"><img src="../assets/footer-facebook.png" alt=""></a>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li v-for="(link, index) in footerLinks" :key="index">
-                    <a :href="link.url"><img src="../assets/footer-facebook.png" alt=""></a>
-                </li>
-            </ul>
         </div>
+        
     </div>
 
 </template>
@@ -53,7 +56,6 @@
     .outer {
         background-color: $DClightgrey;
         min-height: 7rem;
-        justify-content: space-between;
     }
     button {
         background-color: $DClightgrey;

@@ -11,8 +11,12 @@
 
 <template>
     <div class="outer">
-        <div class="inner">
-            
+        <div class="outerInner">
+            <nav>
+                <ul>
+
+                </ul>
+            </nav>
         </div>
     </div>
 
@@ -32,7 +36,27 @@
         height: fit-content;
         
     }
-    h1 {
-        color: white;
-    }
+        nav {
+            box-sizing: border-box;
+    
+            ul {
+                display: flex;
+    
+                li {
+                    list-style: none;
+                    margin: 0 1rem 0;
+    
+                    a {
+                        /* display: inline-block;
+                        padding: 3rem 0;
+                        text-decoration: none;
+                        color: $DCgrey;
+                        font-weight: 600; */
+    
+
+                    }
+    
+                }
+            }
+        }
 </style>

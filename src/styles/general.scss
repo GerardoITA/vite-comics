@@ -7,7 +7,16 @@
 }
 .outer {
     min-height: 10rem;
-    padding: 0 10%; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
     
-    @include center(both);
+}
+.outerInner {
+    width: 1700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  
 }

@@ -37,16 +37,19 @@
 
 <template>
     <div class="outer">
-        <nav>
-            <ul>
-              <li v-for="(object, index) in bannerLinks" :key="index">
-                <img src="../assets/buy-comics-digital-comics.png" alt="link">
-                <a :href="object.url">
-                    {{object.name}}
-                </a>
-              </li>  
-            </ul>
-        </nav>
+        <div class="innerOuter">
+            <nav>
+                <ul>
+                    <li v-for="(object, index) in bannerLinks" :key="index">
+                        <img src="../assets/buy-comics-digital-comics.png" alt="link">
+                        <a :href="object.url">
+                            {{ object.name }}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
     </div>
 
 </template>

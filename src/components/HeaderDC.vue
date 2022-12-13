@@ -52,19 +52,21 @@
 
 <template>
     <div class="outer">
-        <a href="/" class="logoDC">
-            <img src="../assets/dc-logo.png" alt="Logo DC">
-        </a>
-
-        <nav>
-            <ul>
-                <li v-for="(link, index) in links" :key="index">
-                    <a :href="link.url" :class="{active: link.current}">
-                        {{link.text}}
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="outerInner">
+            <a href="/" class="logoDC">
+                <img src="../assets/dc-logo.png" alt="Logo DC">
+            </a>
+            
+            <nav>
+                <ul>
+                    <li v-for="(link, index) in links" :key="index">
+                        <a :href="link.url" :class="{ active: link.current }">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
 </template>
@@ -73,9 +75,8 @@
 @use "../styles/partials/variables" as *;
 @use "../styles/partials/mixins" as *;
     .outer {
-        gap: 20%;
         background-color: white;
-        justify-content: space-between;
+        
     }
     nav {
         box-sizing: border-box;
@@ -85,7 +86,6 @@
                 li {
                     list-style: none;
                     margin: 0 2rem 0;
-        
                     a {
                         display: inline-block;
                         padding: 3rem 0;
