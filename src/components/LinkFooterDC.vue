@@ -5,23 +5,23 @@
             return {
                 footerLinks: [
                     {
-                        path: "0",
+                        path: "footer-facebook.png",
                         url: "#"
                     },  
                     {
-                        path: "0",
+                        path: "footer-periscope.png",
                         url: "#"
                     },
                     {
-                        path: "0",
+                        path: "footer-pinterest.png",
                         url: "#"
                     },
                     {
-                        path: "0",
+                        path: "footer-twitter.png",
                         url: "#"
                     },
                     {
-                        path: "0",
+                        path: "footer-youtube.png",
                         url: "#"
                     }
                 ]
