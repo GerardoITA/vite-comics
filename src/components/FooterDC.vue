@@ -186,7 +186,7 @@
     }
     nav {
         box-sizing: border-box;
-        min-height: 20rem;
+        min-height: 18rem;
         width: 500px;
         display: flex;
         flex-wrap: wrap;
