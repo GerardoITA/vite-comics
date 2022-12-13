@@ -1,6 +1,6 @@
 <script>
     export default {
-        name: "MainDC",
+        name: "FooterDC",
         data(){
             return {
                 
@@ -11,7 +11,9 @@
 
 <template>
     <div class="outer">
-        <h1>--> Content goes here &lt-- </h1>
+        <div class="inner">
+            
+        </div>
     </div>
 
 </template>
@@ -20,7 +22,15 @@
 @use "../styles/partials/variables" as *;
 @use "../styles/partials/mixins" as *;
     .outer {
-        background-color: $DCgrey;
+        background-image: url(../assets/footer-bg.jpg);
+        background-size:cover;
+        background-color: $DClightgrey;
+        min-height: 23rem;
+    }
+    .inner {
+        width: 100%;
+        height: fit-content;
+        
     }
     h1 {
         color: white;

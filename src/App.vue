@@ -2,6 +2,8 @@
 import HeaderDC from './components/HeaderDC.vue'
 import MainDC from './components/MainDC.vue'
 import BannerDC from './components/BannerDC.vue'
+import FooterDC from './components/FooterDC.vue'
+import LinkFooterDC from './components/LinkFooterDC.vue'
 
 export default {
   name: "App",
@@ -9,6 +11,8 @@ export default {
     HeaderDC,
     MainDC,
     BannerDC,
+    FooterDC,
+    LinkFooterDC,
   }
 }
 </script>
@@ -17,6 +21,8 @@ export default {
  <HeaderDC></HeaderDC>
  <MainDC></MainDC>
  <BannerDC></BannerDC>
+ <FooterDC></FooterDC>
+ <LinkFooterDC></LinkFooterDC>
 </template>
 
 <style lang="scss">

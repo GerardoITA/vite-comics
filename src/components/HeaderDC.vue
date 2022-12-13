@@ -75,6 +75,7 @@
     .outer {
         gap: 20%;
         background-color: white;
+        justify-content: space-between;
     }
     nav {
         box-sizing: border-box;

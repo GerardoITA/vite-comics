@@ -21,6 +21,7 @@
 @use "../styles/partials/mixins" as *;
     .outer {
         background-color: $DCgrey;
+        min-height: calc(100vh - 50rem)
     }
     h1 {
         color: white;
