@@ -7,31 +7,36 @@
                     {
                         name: "DIGITAL COMICS",
                         url: "#",
-                        path: "buy-comics-digital-comics.png"
+                        path: "../assets/buy-comics-digital-comics.png"
                     },
                     {
                         name: "DC MERCHANDISE",
                         url: "#",
-                        path: "buy-comics-merchandise.png"
+                        path: "../assets/buy-comics-merchandise.png"
                     },
                     {
                         name: "SUBSCRIPTION",
                         url: "#",
-                        path: "buy-comics-shop-locator.png"
+                        path: "../assets/buy-comics-shop-locator.png"
                     },
                     {
                         name: "COMIC SHOP LOCATOR",
                         url: "#", 
-                        path: "buy-comics-subscriptions.png"
+                        path: "../assets/buy-comics-subscriptions.png"
                     },
                     {
                         name: "DC POWER VISA",
                         url: "#",
-                        path: "buy-dc-power-visa.svg"
+                        path: "../assets/buy-dc-power-visa.svg"
                     },
                 ] 
             }
+        },
+        methods: {
+        getImageURL: function (imgPath) {
+            return new URL(imgPath, import.meta.url).href
         }
+    }
     }
 </script>
 
@@ -41,7 +46,7 @@
             <nav>
                 <ul>
                     <li v-for="(object, index) in bannerLinks" :key="index">
-                        <img src="../assets/buy-comics-digital-comics.png" alt="link">
+                        <img :src="getImageURL(object.path)" alt="link">
                         <a :href="object.url">
                             {{ object.name }}
                         </a>

@@ -5,23 +5,23 @@
             return {
                 footerLinks: [
                     {
-                        path: "footer-facebook.png",
+                        path: "../assets/footer-facebook.png",
                         url: "#"
                     },  
                     {
-                        path: "footer-periscope.png",
+                        path: "../assets/footer-periscope.png",
                         url: "#"
                     },
                     {
-                        path: "footer-pinterest.png",
+                        path: "../assets/footer-pinterest.png",
                         url: "#"
                     },
                     {
-                        path: "footer-twitter.png",
+                        path: "../assets/footer-twitter.png",
                         url: "#"
                     },
                     {
-                        path: "footer-youtube.png",
+                        path: "../assets/footer-youtube.png",
                         url: "#"
                     }
                 ]
@@ -45,7 +45,7 @@
                 </div>
                 <ul>
                     <li v-for="(link, index) in footerLinks" :key="index">
-                        <a :href="link.url"><img :src="getImageURL(link.path)" alt=""></a>
+                        <a :href="link.url"><img :src="getImageURL(link.path)" alt="."></a>
                     </li>
                 </ul>
             </div>
